@@ -2,7 +2,7 @@
  * The package is aiming to add a drizzle interface unless one already exists as there is no typechecking on this
  */
 import _ from 'lodash';
-import { getNetwork } from '@blockrocket/utils';
+import br_utils from '@blockrocket/utils';
 
 function amountValid(amount: string): boolean {
     return amount !== '' && amount !== 'loading' && !isNaN(Number(amount));
@@ -19,7 +19,7 @@ function networkVersion(drizzleInstance: any) {
 }
 
 export function getNetworkName(drizzleInstance: any): string {
-    return drizzleInstance ? getNetwork(networkVersion(drizzleInstance)) : 'unknown';
+    return drizzleInstance ? br_utils.getNetworkName(networkVersion(drizzleInstance)) : 'unknown';
 }
 
 export function getEtherscanBaseUrl(drizzleInstance: any): string {
