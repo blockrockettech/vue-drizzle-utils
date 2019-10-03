@@ -2,7 +2,7 @@
  * The package is aiming to add a drizzle interface unless one already exists as there is no typechecking on this
  */
 import _ from 'lodash';
-import br_utils from '@blockrocket/utils';
+import * as br_utils from '@blockrocket/utils';
 
 function amountValid(amount: string): boolean {
     return amount !== '' && amount !== 'loading' && !isNaN(Number(amount));

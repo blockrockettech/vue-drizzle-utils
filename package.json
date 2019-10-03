@@ -1,6 +1,6 @@
 {
   "name": "@blockrocket/vue-drizzle-utils",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Typescript utils for the Vue Drizzle plugin",
   "main": "src/index.ts",
   "scripts": {},
@@ -11,7 +11,7 @@
   "author": "Blockrocket.tech",
   "license": "MIT",
   "dependencies": {
-    "@blockrocket/utils": "^1.0.4",
+    "@blockrocket/utils": "^1.0.5",
     "lodash": "^4.17.15"
   }
 }
